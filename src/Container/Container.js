@@ -155,6 +155,19 @@ const Container = () => {
           <p>Mental health therapy casestudy</p>
         </div>
       </div>
+      <div className="about-me-ctn" id="about-me-ctn">
+        <div className="about-me-title-ctn">
+          <div className="title-one">
+            <h4>About</h4>
+          </div>
+          <div className="title-two">
+            <h4> Me</h4>
+          </div>
+        </div>
+        <div className="blue-line-ctn">
+          <div className="blue-line"></div>
+        </div>
+      </div>
     </div>
   );
 };
