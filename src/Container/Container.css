@@ -499,7 +499,10 @@
   grid-column: 1/-1;
   grid-row: 7/8;
   display: grid;
-  grid-template-columns: repeat(10, minmax(1rem, 1fr));
+  grid-template-columns: minmax(8rem, 1fr) repeat(8, minmax(1rem, 1fr)) minmax(
+      8rem,
+      1fr
+    );
   grid-template-rows: repeat(3, min-content);
   margin-top: 10rem;
   position: relative;
@@ -546,6 +549,120 @@
   grid-row: 2/3;
   margin: 0;
   gap: 0;
+}
+
+.blue-line-ctn {
+  grid-column: 1/6;
+  grid-row: 2/3;
+  position: relative;
+}
+
+.blue-line {
+  position: absolute;
+  width: 123.848rem;
+  height: 45.322rem;
+  top: -5rem;
+  left: -55rem;
+  background: #1a23ff;
+  border-radius: 0px 213.5px 226.612px 6px;
+  transform: rotate(30.96deg);
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.blue-line .star {
+  width: 15rem;
+  height: 15.2rem;
+  position: absolute;
+  top: 400px;
+  left: 0px;
+  z-index: 1;
+}
+
+.blue-line .star img {
+  height: 100%;
+  width: 100%;
+}
+
+.blue-line img {
+  transform: rotate(-30.96deg);
+  height: 57.4rem;
+  white-space: 57.4rem;
+  position: absolute;
+  top: -40px;
+  left: 700px;
+}
+
+.about-me-content-ctn {
+  grid-column: 6/10;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me-content-wrapper {
+  margin: 10rem 0 5rem;
+}
+
+.about-me-content-wrapper p {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 4rem;
+  letter-spacing: 0.01em;
+  color: #000113;
+  margin: 0;
+}
+
+.quote,
+.quote-two {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 12px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.quote {
+  margin-bottom: 1rem;
+}
+
+.quote-two {
+  float: right;
+  transform: rotate(180deg);
+}
+
+.about-me-content-button a {
+  text-decoration: none;
+}
+
+.about-me-content-button button {
+  background-color: #1a23ff;
+  color: #ffffff;
+  border: none;
+  font-family: "Clash Display", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-me-content-button button:hover {
+  background-color: rgba(14, 20, 183, 0.8);
+}
+
+.about-me-content-button i {
+  margin-left: 1rem;
 }
 
 /* about-me end */

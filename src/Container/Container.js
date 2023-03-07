@@ -12,6 +12,8 @@ import ProjectThree from "./../Assets/Images/project-three.png";
 import ProjectFour from "./../Assets/Images/project-four.png";
 import ProjectFive from "./../Assets/Images/project-five.png";
 import ProjectSix from "./../Assets/Images/project-six.png";
+import audreytwo from "./../Assets/Images/profile-two-removebg-preview.png";
+import style from "./../Assets/Images/Vector22.png";
 
 const Container = () => {
   return (
@@ -165,7 +167,36 @@ const Container = () => {
           </div>
         </div>
         <div className="blue-line-ctn">
-          <div className="blue-line"></div>
+          <div className="blue-line">
+            <div className="star">
+              <img src={style} alt="stars" />
+            </div>
+
+            <img src={audreytwo} alt="profile" />
+          </div>
+        </div>
+        <div className="about-me-content-ctn">
+          <div className="about-me-content-wrapper">
+            <span className="quote">“</span>
+            <p>
+              I’m audrey oluchi oji. A product designer from Nigeria, I started
+              out as a curious soul in Tech learning about User interface &
+              experience design, my background in research really helped out (I
+              studied & attained a B.Sc clinical pharmacology decree). After
+              some time I ended up diving deeper than UI/UX into the vast world
+              of Product design. A huge part of my story as a designer comes
+              from learning and relearning every single day and always taking a
+              leap to do something innovative.
+            </p>
+            <span className="quote-two">“</span>
+          </div>
+          <div className="about-me-content-button">
+            <a href="/">
+              <button>
+                Download my resume <i className="fas fa-chevron-down"></i>
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
